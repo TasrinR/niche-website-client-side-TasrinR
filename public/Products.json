@@ -1,0 +1,72 @@
+[
+    {
+        "name":"Drifter",
+        "specification":"Polarized Retro Square Sunglasses",
+        "description": "Why mess with a classic? These polarized shades have a retro square shape and decades worth of street cred. Polarized Lenses, Plastic Frame, Non-Mirrored Lens, 99% UVA/UVB Sun Protection",
+        "price": "400 BDT",
+        "image": "https://www.sunglasswarehouse.com/tn_images--D--Drifter-Angle-Black-SW-DS---jpg_w1000.jpg"
+    },
+    {
+        "name":"Cash",
+        "specification":"Polarized Round Sunglasses",
+        "description": "Who needs the designer label when you can look just as cool for a fraction of the cost? With the extra TK, you can see your fave band headline in these retro inspired, polarized shades. Polarized Lenses, Plastic Frame, Non-Mirrored Lens, 99% UVA/UVB Sun Protection",
+        "price": "450 BDT",
+        "image": "https://www.sunglasswarehouse.com/tn_images--D--Cash-Angle-BLue---jpg_w1000.jpg"
+    },
+    {
+        "name":"Potrero",
+        "specification":"Polarized Round Sunglasses",
+        "description": "We can't ask for much more than a cool, classic round frame with a keyhole bridge. Well, maybe polarized lenses would be nice, too. These lenses are very oversized. Polarized Lenses, Plastic Frame, Non-Mirrored Lens, 99% UVA/UVB Sun Protection",
+        "price": "600 BDT",
+        "image": "https://www.sunglasswarehouse.com/tn_images--W--1603PL-Black-round-polarized-sunglasses-keyhole-bridge---jpg_w1000.jpg"
+    },
+    {
+        "name":"Reece",
+        "specification":"Mirrored Aviator Sunglasses",
+        "description": "These flat lens, brightly mirrored aviators are offered in every color you can imagine- one for every day of the week; one for every mood; even one to match every outfit. Decisions, decisions. Metal Frame. Multicolor Mirrored Lens. Spring Hinges. 99% UVA/UVB Sun Protection",
+        "price": "650 BDT",
+        "image": "https://www.sunglasswarehouse.com/tn_images--W--4006GLD-RV-LightGreeb---jpg_w1000.jpg"
+    },
+    {
+        "name":"Stokes",
+        "specification":"Polarized Retro Square Sunglasses",
+        "description": "Someone's feeling bold. With bright accents and polarized, mirrored lenses, you better walk the walk with these flashy shades. Polarized Lenses, Plastic Frame, Non-Mirrored Lens, 99% UVA/UVB Sun Protection",
+        "price": "450 BDT",
+        "image": "https://www.sunglasswarehouse.com/tn_images--D--Stokes-Angle-Purple---jpg_w1000.jpg"
+    },
+    {
+        "name":"Vista",
+        "specification":"Polarized Aviator Sunglasses",
+        "description": "Couldn't you just see yourself on top of a mountain with these sunglasses on? With polarized lenses to help reduce glare, you are sure to see the world a little more clearly.Polarized Lenses. Metal Frame. Mirrored Lens. Spring Hinges.99% UVA/UVB Sun Protection",
+        "price": "500 BDT",
+        "image": "https://www.sunglasswarehouse.com/tn_images--D--Vista-Angle-Silver-SW---jpg_w1000.jpg"
+    },
+    {
+        "name":"Allman",
+        "specification":"Polarized Round Sunglasses",
+        "description": "Electric, acoustic, or air guitar? Whichever, keep on jammin' in these polarized rounded browline shades. Polarized Lenses. Metal & Plastic Frame. Non-Mirrored Lens. 99% UVA/UVB Sun Protection",
+        "price": "650 BDT",
+        "image": "https://www.sunglasswarehouse.com/tn_images--D--Allman-Angle-Tort---jpg_w1000.jpg"
+    },
+    {
+        "name":"Bigsby",
+        "specification":"Mirrored Round Sunglasses",
+        "description": "Stay ahead of the trends with the Bigsby! This translucent clear style has a bold plastic and metal frame with colorful mirrored lenses and a trendy keyhole bridge. This style has long temples. Metal & Plastic Frame. Mirrored Lens. 99% UVA/UVB Sun Protection",
+        "price": "550 BDT",
+        "image": "https://www.sunglasswarehouse.com/tn_images--D--SW-Brigsby-Angle-Blue---jpg_w1000.jpg"
+    },
+    {
+        "name":"Dune",
+        "specification":"'90s Round Sunglasses",
+        "description": "Bright tinted sunglasses that surpass the ordinary. Because ordinary is boring, anyway. Metal Frame. Non-Mirrored Lens. 99% UVA/UVB Sun Protection",
+        "price": "750 BDT",
+        "image": "https://www.sunglasswarehouse.com/tn_images--D--Dune-Angle-Green-SW---jpg_w1000.jpg"
+    },
+    {
+        "name":"Santorini",
+        "specification":"Polarized Aviator Sunglasses",
+        "description": "Plan your island getaway and stock up on these colorful mirrored aviators while you're at it. The polarized lenses remove glare while the price lets you splurge on other things like scuba diving lessons or sunset dinner cruises. Polarized Lenses. Metal Frame. Multicolor Mirrored Lens.99% UVA/UVB Sun Protection",
+        "price": "650 BDT",
+        "image": "https://www.sunglasswarehouse.com/tn_images--D--Santorini-Angle-SilverGreen---jpg_w1000.jpg"
+    }
+]
