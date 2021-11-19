@@ -21,7 +21,7 @@ const useFirebase = () => {
             console.log(newUser)
             setUser(newUser);
             // save user to the database
-            axios.post('http://localhost:5000/users', newUser)
+            axios.post('https://lit-sands-51210.herokuapp.com/users', newUser)
             updateProfile(auth.currentUser, {
                 displayName: name
             }).then(() => {
@@ -71,7 +71,20 @@ const useFirebase = () => {
         return unsubscribed;
     }, [])
 
+
+
+    useEffect(() => {
+        if (user) {
+           setIsLoading(true)
+           axios.get(`https://lit-sands-51210.herokuapp.com/users/${user?.email}`).then(({ data }) => {
+              setAdmin(data.admin);
+              setIsLoading(false)
+           });
+        }
+     }, [user]);
+     
     return {
+        admin,
         handlePasswordSignup,
         handlePasswordSignin,
         handleSignOut,

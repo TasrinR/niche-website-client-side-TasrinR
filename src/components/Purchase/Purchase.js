@@ -15,7 +15,7 @@ const Purchase = () => {
     const [selectedData, setSelectedData] = useState([])
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/products/${id}`)
+        fetch(`https://lit-sands-51210.herokuapp.com/products/${id}`)
         .then(res=>res.json())
         .then(data=>{
             console.log(data)
@@ -30,7 +30,7 @@ const Purchase = () => {
         formData.orderItem = selectedData;
         formData.orderStatus = "pending";
 
-        axios.post('http://localhost:5000/orders', data)
+        axios.post('https://lit-sands-51210.herokuapp.com/orders', data)
             .then(res => {
                 if (res.data._id) {
                     

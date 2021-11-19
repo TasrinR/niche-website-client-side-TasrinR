@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
-import { Alert, Button, Form, Spinner } from 'react-bootstrap';
+import { Alert, Button, Container, Form, Spinner } from 'react-bootstrap';
 import { useHistory, useLocation } from 'react-router';
+import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import Header from '../../shared/Header/Header';
 
@@ -24,7 +25,7 @@ const Login = () => {
     }
 
     return (
-        <div>
+        <Container>
             <Header></Header>
             <Form onSubmit={submitHandler}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -41,9 +42,10 @@ const Login = () => {
             </Button>
             {isLoading && <Spinner animation="border" />}
             {user?.email && <Alert variant="success">Login successfully!</Alert>}
-            {error && <Alert variant="danger">{error}</Alert>}
+            
         </Form>
-        </div>
+        <p>Dont have an account? <Link to='/register'>Sign up</Link></p>
+        </Container>
     );
 };
 

@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
 import useAuth from '../../../hooks/useAuth';
@@ -6,14 +7,25 @@ const MyOrders = () => {
     const {user} = useAuth()
     const [myOrders, setMyOrders] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/orders')
+        fetch('https://lit-sands-51210.herokuapp.com/orders')
         .then(res=>res.json())
         .then(data => {
-            const myData = data.filter(data => data.userMail === user.email)
+            const myData = data.filter(data => data.email === user.email)
             setMyOrders(myData);
             console.log(myData);
         })
     },[])
+
+    const handleDelete = async (id) => {
+        const isConfirmed = window.confirm("are you sure you want to delete?!");
+         if(isConfirmed){
+             const { data } = await axios.delete(`https://lit-sands-51210.herokuapp.com/orders/${id}`)
+             if (data.deletedCount === 1) {
+                 alert('deleted succesfully!')
+                 setMyOrders((orders) => orders.filter(order => order._id !== id))
+             }
+         }
+     }
     return (
         <Table responsive>
             <thead>
@@ -28,11 +40,11 @@ const MyOrders = () => {
             <tbody>
                 {myOrders.map(myOrder =>(
                     <tr key={myOrder._id}>
-                        <td>{myOrder.orderItem.image}</td>
-                        <td>{myOrder.orderItem.name}</td>
-                        <td>{myOrder.orderItem.price}</td>
-                        <td>{myOrder.orderStatus}</td>
-                        <td>Delete</td>
+                        <td><img src={myOrder.orderItem.image} alt="" rounded fluid className="w-25"/></td>
+                        <td style={{width: '20%'}}>{myOrder.orderItem.name}</td>
+                        <td style={{width: '20%'}}>{myOrder.orderItem.price}</td>
+                        <td style={{width: '20%'}}>{myOrder.orderStatus}</td>
+                        <td style={{width: '20%'}}><button onClick={() => handleDelete(myOrder._id)}>Delete</button></td>
                     </tr>
                 ))}
             </tbody>

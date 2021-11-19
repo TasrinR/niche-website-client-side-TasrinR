@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Pay = () => {
+const MakeAnAdmin = () => {
     return (
         <div>
-            Pay is under construction
+            
         </div>
     );
 };
 
-export default Pay;
+export default MakeAnAdmin;

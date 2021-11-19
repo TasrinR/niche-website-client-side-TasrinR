@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import { Button, Form } from 'react-bootstrap';
+import { Button, Container, Form } from 'react-bootstrap';
 import { useHistory, useLocation } from 'react-router';
+import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
+import Header from '../../shared/Header/Header';
 
 const Register = () => {
     const [loginData, setLoginData] = useState({})
@@ -35,7 +37,9 @@ const Register = () => {
     }
 
     return (
-        <Form onSubmit={submitHandler}>
+        <Container>
+            <Header></Header>
+            <Form onSubmit={submitHandler}>
             <Form.Group className="mb-3" controlId="formBasicName">
                 <Form.Label>Name</Form.Label>
                 <Form.Control type="name" name="name" placeholder="Your name" onBlur={handleOnBlur} />
@@ -57,6 +61,8 @@ const Register = () => {
                 Submit
             </Button>
         </Form>
+        <p>Already have an account? <Link to='/login'>Sign in</Link></p>
+        </Container>
     );
 };
 
